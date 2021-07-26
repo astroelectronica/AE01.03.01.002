@@ -1,0 +1,19 @@
+*pwm control regulation
+.include ../AE01.03.01.002.cir
+*
+.param VCC=30
+.param Rs1=0.402
+.param Rs2=0.402
+*
+.param frec=500
+.param percent=90
+.param delay=2m
+.param repeat=2
+.param trise=50n
+.param tfall=50n
+*
+.param cycle=1/frec
+.param x_base=(cycle*repeat)+delay
+.param duty=(percent/100)*cycle
+.tran 0 {x_base} 0 uic startup
+.backanno

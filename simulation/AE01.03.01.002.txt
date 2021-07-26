@@ -1,0 +1,69 @@
+Ecuations
+---------
+Iload=(Vctrl/Vref)*(Vthd/Rset)
+Rset=(Vthd/Iload)*(Vctrl/Vref)
+Vthd=0.1V
+Vref=2.5V
+Vctrl=0.5V(20%)...2.5V(100%)
+****
+Iload-->700mA
+Rs1=Rs2=0.284 ohm
+Rs_total=(0.284 ohm || 0.284 ohm)
+Rs_total=0.142 ohm
+*
+Iload=(Vctrl/Vref)*(Vthd/Rset)
+Iload=(2.5V/2.5V)*(0.1V/0.142 ohm)
+Iload=704.2253mA (100%)
+Iload=(0.5V/2.5V)*(0.1V/0.142 ohm)
+Iload=140.8450mA (20%)
+*
+Vsense=Rs_total*Iload
+Vsense=0.142 ohm*704.2253mA
+Vsense=100mV
+*
+P_Rs1=Rs1*(Iload/2)²
+P_Rs1=0.284 ohm*(704.2253mA/2)²
+P_Rs1=35.2112mW
+P_Rs1=P_Rs2
+****
+Iload-->500mA
+Rs1=Rs2=0.402 ohm
+Rs_total=(0.402 ohm || 0.402 ohm)
+Rs_total=0.201ohm
+*
+Iload=(Vctrl/Vref)*(Vthd/Rset)
+Iload=(2.5V/2.5V)*(0.1V/0.201 ohm)
+Iload=497.5124mA (100%)
+Iload=(0.5V/2.5V)*(0.1V/0.201 ohm)
+Iload=99.5024mA (20%)
+*
+Vsense=Rs_total*Iload
+Vsense=0.201 ohm*497.5124mA
+Vsense=99.9999mV
+*
+P_Rs1=Rs1*(Iload/2)²
+P_Rs1=0.402 ohm*(497.5124mA/2)²
+P_Rs1=24.8756mW
+P_Rs1=P_Rs2
+****
+Iload-->350mA
+Rs1=Rs2=0.569 ohm
+Rs_total=(0.569 ohm || 0.569 ohm)
+Rs_total=0.2845ohm
+*
+Iload=(Vctrl/Vref)*(Vthd/Rset)
+Iload=(2.5V/2.5V)*(0.1V/0.2845 ohm)
+Iload=351.4938mA (100%)
+Iload=(0.5V/2.5V)*(0.1V/0.2845 ohm)
+Iload=70.2987mA (20%)
+*
+Vsense=Rs_total*Iload
+Vsense=0.2845 ohm*351.4938mA
+Vsense=100mV
+*
+P_Rs1=Rs1*(Iload/2)²
+P_Rs1=0.569 ohm*(351.4938mA/2)²
+P_Rs1=17.5746mW
+P_Rs1=P_Rs2
+****
+
